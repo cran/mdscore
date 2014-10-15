@@ -1,0 +1,11 @@
+1801aaa5c957d9f389c3c22f303034a3 *DESCRIPTION
+9a9bc4d024dde955c2598e9e00526283 *NAMESPACE
+0c46ec95ccda1d7e876efe3fac7ff1e5 *R/addtests.r
+7e8eb5eb12ca8185c24ed8497d51d7e5 *R/mdscore.r
+792c44b0e1cef61ef2ca584a5b261ef7 *data/strength.rda
+ee3cc4feaf17a2d1aaa235ba2e802c8a *inst/CITATION
+9cf29d171d3107d3048bd8f7f2417ac8 *man/lr.test.Rd
+bf1ee76a6e24b817be8258b4bd788701 *man/mdscore.Rd
+28cee8f9950a7f6d7cb1dadf337a47e3 *man/strength.Rd
+d7ca57622fa64fb1739bdd599ecbc34c *man/summary.mdscore.Rd
+a19b2a0bef948bf31f03a940af0f5994 *man/wald.test.Rd

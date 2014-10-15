@@ -1,0 +1,17 @@
+# last modified 2014-10-17 by Hermes Jr.
+
+export(
+  mdscore,
+  summary.mdscore,
+  lr.test,
+  wald.test
+)
+
+# package dependencies
+
+importFrom(MASS, gamma.dispersion, gamma.shape)
+
+# methods
+
+S3method(summary, mdscore)
+
