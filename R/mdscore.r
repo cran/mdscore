@@ -53,7 +53,14 @@ mdscore <- function(model = model, X1 = X1, phi = NULL){
   #----------------------------------------------------------------------
   # Mean and variance derivatives
   #----------------------------------------------------------------------
-  dmu  <- D(mu,"eta")
+  
+  if(model$family[[2]] %in% c("probit","cauchit")){
+    dmu <- switch(model$family[[2]],
+                  probit  = quote(exp(-eta^2/2)/sqrt(2*pi)),
+                  cauchit = quote(1/(pi*(1+eta^2)))) 
+  } else{
+    dmu <- D(mu,"eta")
+  }
   d2mu <- D(dmu,"eta")
   dV   <- D(V,"mu")
   d2V  <- D(dV,"mu")
@@ -154,12 +161,14 @@ mdscore <- function(model = model, X1 = X1, phi = NULL){
   
   #----------------------------------------------------------------------
   # Pearson residuals
-  #----------------------------------------------------------------------  
+  #----------------------------------------------------------------------
+  
   rp <- resid(model,type="pearson")*sqrt(phi) #also rp <- sqrt(phi)*(model$y - mu.est)/sqrt(V.est)
   
   #----------------------------------------------------------------------
   # Score and corrected score statistic
   #----------------------------------------------------------------------  
+  
   Sr     <- as.numeric(t(rp)%*%(sqrt(w)*X1)%*%IRWR%*%t(X1*sqrt(w))%*%rp)
   Sr_cor <- as.numeric(Sr*(1-(c+b*Sr+a*Sr^2)))  
   if(Sr_cor <= 0) stop("Correction yields a non positive value") 

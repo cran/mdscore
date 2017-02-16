@@ -1,7 +1,7 @@
-1801aaa5c957d9f389c3c22f303034a3 *DESCRIPTION
-9a9bc4d024dde955c2598e9e00526283 *NAMESPACE
-0c46ec95ccda1d7e876efe3fac7ff1e5 *R/addtests.r
-7e8eb5eb12ca8185c24ed8497d51d7e5 *R/mdscore.r
+646a54670ecb9a82024faf7944bbdf99 *DESCRIPTION
+8fc73bc95d2c4866c6046cfb7feed7d7 *NAMESPACE
+810a67e48f3a3c392cfbf7b968b10263 *R/addtests.r
+5a58d7ba577f6fa23cc0fe14fca901a9 *R/mdscore.r
 792c44b0e1cef61ef2ca584a5b261ef7 *data/strength.rda
 ee3cc4feaf17a2d1aaa235ba2e802c8a *inst/CITATION
 9cf29d171d3107d3048bd8f7f2417ac8 *man/lr.test.Rd

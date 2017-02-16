@@ -1,4 +1,4 @@
-# last modified 2014-10-17 by Hermes Jr.
+# last modified 2017-02-16 by Hermes Jr.
 
 export(
   mdscore,
@@ -10,6 +10,7 @@ export(
 # package dependencies
 
 importFrom(MASS, gamma.dispersion, gamma.shape)
+importFrom(stats, D, coef, model.matrix, pchisq, resid, logLik)
 
 # methods
 
